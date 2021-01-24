@@ -419,6 +419,9 @@ font-weight: 400;
         transition: 1s;
         opacity: 0;
     }
+    .btn-outline-danger{
+        display: block !important;
+    }
     .navbar-collapse {
         position: fixed;
         top:0; 
@@ -1027,7 +1030,7 @@ color: white;
         background-color: #7CB62F;
         /* width:40px;
         height:40px; */
-        opacity:0.5;
+        /* opacity:0.5; */
         position:fixed;
         bottom:10px;
         right:10px;
