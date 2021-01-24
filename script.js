@@ -19,13 +19,47 @@ $(document).ready(function () {
         });
 
     });
+    $(function () {
+        'use strict'
+  
+      $("[data-trigger]").on("click", function(){
+          var trigger_id =  $(this).attr('data-trigger');
+          $(trigger_id).toggleClass("show");
+          $('body').toggleClass("offcanvas-active");
+      });
+  
+      // close if press ESC button 
+      $(document).on('keydown', function(event) {
+          if(event.keyCode === 27) {
+             $(".navbar-collapse").removeClass("show");
+             $("body").removeClass("overlay-active");
+          }
+      });
+  
+      // close button 
+      $(".btn-close").click(function(e){
+          $(".navbar-collapse").removeClass("show");
+          $("body").removeClass("offcanvas-active");
+      }); 
+  
+  
+  })
     $('.masonry').mixItUp({
         selectors: {
             target: '.itemy'
         }
     });
     
+    var docWidth = document.documentElement.offsetWidth;
 
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );
 
     // $('#carousel-example').on('slide.bs.carousel', function (e) {
     //     /*
