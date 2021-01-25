@@ -396,7 +396,7 @@ font-weight: 400;
     }
     .offcanvas-header{ display:block; }
     .jumbotron{
-     margin-top: 5rem;
+     margin: 5rem 0;
     }
 
     .our-services .col-md-3{
