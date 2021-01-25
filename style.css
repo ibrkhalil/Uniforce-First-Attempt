@@ -395,7 +395,9 @@ font-weight: 400;
         /* float: right; */
     }
     .offcanvas-header{ display:block; }
-
+    .jumbotron{
+     margin-top: 5rem;
+    }
 
     .our-services .col-md-3{
         margin-right: 0 !important;
