@@ -22,7 +22,8 @@ body{
 }
 .main-nav{
     /* margin: 0; */
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     transition: all 200ms;    
     font-size: small;
     background: linear-gradient(to right, #96c93d, #00b09b);
@@ -58,6 +59,8 @@ body{
     background-color: #7CB62F;
 }
 .navbar{
+    display: flex;
+    justify-content: space-evenly !important;
     position: fixed;
     z-index: 999;
     width: 100vw;
