@@ -23,7 +23,8 @@ body{
 .main-nav{
     /* margin: 0; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     transition: all 200ms;    
     font-size: small;
     background: linear-gradient(to right, #96c93d, #00b09b);
