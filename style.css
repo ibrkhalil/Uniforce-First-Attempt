@@ -81,6 +81,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-evenly !important;
+    align-items: center;
     position: fixed;
     z-index: 999;
     width: 100vw;
@@ -100,9 +101,7 @@ body{
     /* transition: all 200ms ease; */
     
   }
-  nav .fa-bars{
-      /* float: right; */
-  }
+
 /* .navbar-fixed-top.scrolled  a{
     color: black;
     
